@@ -17,7 +17,7 @@ import { purgeAddinPickerItems, dispatchRStudioAPICall } from './rstudioapi';
 import { IRequest } from './liveShare/shareSession';
 import { homeExtDir, rWorkspace, globalRHelp, globalHttpgdManager, extensionContext, sessionStatusBarItem } from './extension';
 import { UUID, rHostService, rGuestService, isLiveShare, isHost, isGuestSession, closeBrowser, guestResDir, shareBrowser, shareWorkspace } from './liveShare';
-import { openVirtualDoc } from './liveShare/virtualDocs';
+import { openVirtualDoc } from './virtualDocs';
 
 export interface GlobalEnv {
     [key: string]: {
