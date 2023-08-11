@@ -131,11 +131,6 @@ export function getInvokeCommand(): string | undefined {
     return undefined;
 }
 
-export const getWorkspaceFolder = () =>
-    vscode.window.activeTextEditor ?
-        vscode.workspace.getWorkspaceFolder(vscode.window.activeTextEditor.document.uri) :
-        (vscode.workspace.workspaceFolders ?? [undefined])[0];
-
 export function ToRStringLiteral(s: string, quote: string): string {
     if (s === undefined) {
         return 'NULL';
